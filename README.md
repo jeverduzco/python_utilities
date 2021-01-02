@@ -19,3 +19,21 @@ To use it just do the following:
 ```
 $ python3 password_generator.py
 ```
+The result is a random password of 20 characters:
+```
+$ The new password is: &fEaG!C#d1#))7$53!6)
+```
+
+### Certificate converter
+
+This utility helps to convert a .pem certificate into a .pfx certificate for use in Windows or Azure environments.
+
+To use it just run the following command with its arguments and valid paths:
+
+```
+$ python3 certificate_converter.py 
+                     --cert /path/to/cert.pem 
+                     --key /path/to/key.pem 
+                     --passphrase PassPhraseOfPrivateKey 
+                     --out /path/to/cert.pfx
+```
